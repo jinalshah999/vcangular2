@@ -1,0 +1,11 @@
+<app-header></app-header>
+<table>
+  <tr *ngFor="let x of allTask">
+    <td>
+       <span [ngClass]="{'donestatus': x.Status=='done','pendingstatus':x.Status=='pending'}" >{{x.Title}}</span>   
+    </td>
+    <td>
+      <button (click)="deleteTask(x)" ><span class="glyphicon glyphicon-trash"></span></button>
+    </td>
+  </tr>
+</table>
