@@ -11,6 +11,9 @@ import { HeaderComponent } from './header.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskdemoService } from './taskdemo.service';
 import { AddtaskComponent } from './tasks/addtask.component';
+import { PipesdemoComponent } from './pipesdemo/pipesdemo.component';
+import { DoublepipePipe } from './doublepipe.pipe';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { AddtaskComponent } from './tasks/addtask.component';
     Demo2Component,
     HeaderComponent,
     TasksComponent,
-    AddtaskComponent
+    AddtaskComponent,
+    PipesdemoComponent,
+    DoublepipePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

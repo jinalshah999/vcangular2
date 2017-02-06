@@ -1,8 +1,9 @@
 <app-header></app-header>
+<input type="text" #input1 (keyup)="0"/>
 <table>
-  <tr *ngFor="let x of allTask">
+  <tr *ngFor="let x of allTask |filter:input1.value  ">
     <td>
-       <span [ngClass]="{'donestatus': x.Status=='done','pendingstatus':x.Status=='pending'}" >{{x.Title}}</span>   
+       <span [ngClass]="{'donestatus': x.Status=='done','pendingstatus':x.Status=='pending'}" >{{x.Title | uppercase}}</span>   
     </td>
     <td>
       <button (click)="deleteTask(x)" ><span class="glyphicon glyphicon-trash"></span></button>
