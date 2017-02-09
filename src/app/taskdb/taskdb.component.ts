@@ -27,5 +27,15 @@ allTask:Task[]=[];
       }
     );
   }
+deleteTask(item:Task){
+  this._data.deleteTask(item).subscribe(
+    (data:any)=>{
+       this.allTask.splice(this.allTask.indexOf(item),1); 
+    },
+    function(error){
 
+    }
+    
+  );
+}
 }

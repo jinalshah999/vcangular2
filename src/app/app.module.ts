@@ -16,6 +16,7 @@ import { DoublepipePipe } from './doublepipe.pipe';
 import { FilterPipe } from './filter.pipe';
 import { TaskdbComponent } from './taskdb/taskdb.component';
 import { TaskdbserviceService } from './taskdbservice.service';
+import { AddtasksComponent } from './taskdb/addtasks/addtasks.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { TaskdbserviceService } from './taskdbservice.service';
     PipesdemoComponent,
     DoublepipePipe,
     FilterPipe,
-    TaskdbComponent
+    TaskdbComponent,
+    AddtasksComponent
   ],
   imports: [
     BrowserModule,

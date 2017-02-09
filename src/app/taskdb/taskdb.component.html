@@ -1,4 +1,7 @@
 <app-header></app-header>
 <ul class="list-group"> 
-  <li class="list-group-item" *ngFor="let item of allTask" >{{item.Title}}</li>
+  <li class="list-group-item" *ngFor="let item of allTask" >{{item.Title}}
+<button (click)="deleteTask(item)" ><span class="glyphicon glyphicon-trash"></span></button>
+  </li>
 </ul>
+ 
