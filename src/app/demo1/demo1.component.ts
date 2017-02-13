@@ -11,5 +11,9 @@ export class Demo1Component implements OnInit {
 
   ngOnInit() {
   }
+  onClicked(value:string)
+  {
+    alert(value);
+  }
 
 }

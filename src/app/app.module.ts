@@ -17,6 +17,10 @@ import { FilterPipe } from './filter.pipe';
 import { TaskdbComponent } from './taskdb/taskdb.component';
 import { TaskdbserviceService } from './taskdbservice.service';
 import { AddtasksComponent } from './taskdb/addtasks/addtasks.component';
+import { PropertybindingComponent } from './demo1/propertybinding.component';
+import { NgcontentdemoComponent } from './demo1/ngcontentdemo.component';
+import { ContentdemoComponent } from './contentdemo/contentdemo.component';
+import { Contentdemo1Component } from './contentdemo/contentdemo1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +33,11 @@ import { AddtasksComponent } from './taskdb/addtasks/addtasks.component';
     DoublepipePipe,
     FilterPipe,
     TaskdbComponent,
-    AddtasksComponent
+    AddtasksComponent,
+    PropertybindingComponent,
+    NgcontentdemoComponent,
+    ContentdemoComponent,
+    Contentdemo1Component
   ],
   imports: [
     BrowserModule,
